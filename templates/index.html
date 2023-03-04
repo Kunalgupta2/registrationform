@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4F4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #333;
+            text-shadow: 1px 1px 0 #ddd;
+        }
+
+        form {
+            margin: auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 60%;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: auto;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration</h1>
+    <form method="POST" action="/register">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="roll_no">Roll No</label>
+        <input type="number" id="roll_no" name="roll_no" placeholder="Enter your roll no" required>
+
+        <label for="college_name">College Name</label>
+        <input type="text" id="college_name" name="college_name" placeholder="Enter your college name" required>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>
